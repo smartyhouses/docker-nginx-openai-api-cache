@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
-      #- "traefik.http.routers.${HASH}.rule=Host(`${NGINX_HOST}`)"
+      - "traefik.http.routers.${HASH}.rule=Host(`${NGINX_HOST}`)"
       - "traefik.http.services.${HASH}.loadbalancer.server.port=${NGINX_PORT}"
 
 networks:
