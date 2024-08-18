@@ -21,5 +21,5 @@ networks:
     external: true
 
 volumes:
-  ./nginx.conf
-  ./server_cache
+  ./nginx.conf:
+  ./server_cache:
